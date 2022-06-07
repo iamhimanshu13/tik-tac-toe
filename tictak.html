@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        var t = 1;
+
+
+
+
+        function show() {
+            if (t % 2 == 1) {
+
+                document.getElementById("b1").value = "X";
+            }
+            else {
+                document.getElementById("b1").value = "O";
+            }
+
+            t++
+            check();
+        }
+
+
+        function show1() {
+            if (t % 2 == 1) {
+                document.getElementById("b2").value = "X";
+            }
+            else {
+                document.getElementById("b2").value = "O";
+            }
+            t++
+            check();
+        }
+
+
+        function show2() {
+            if (t % 2 == 1) {
+                document.getElementById("b3").value = "X";
+            }
+            else {
+                document.getElementById("b3").value = "O";
+            }
+            t++;
+            check();
+        }
+
+        function show3() {
+            if (t % 2 == 1) {
+                document.getElementById("b4").value = "X";
+            }
+            else {
+                document.getElementById("b4").value = "O";
+            }
+            t++
+            check();
+        }
+        function show4() {
+            if (t % 2 == 1) {
+                document.getElementById("b5").value = "X";
+            }
+            else {
+                document.getElementById("b5").value = "O";
+            }
+            t++
+            check();
+        }
+
+        function show5() {
+            if (t % 2 == 1) {
+                document.getElementById("b6").value = "X";
+            }
+            else {
+                document.getElementById("b6").value = "O";
+            }
+            t++
+            check();
+        }
+        function show6() {
+            if (t % 2 == 1) {
+                document.getElementById("b7").value = "X";
+            }
+            else {
+                document.getElementById("b7").value = "O";
+            }
+            t++
+            check();
+        }
+        function show7() {
+            if (t % 2 == 1) {
+                document.getElementById("b8").value = "X";
+            }
+            else {
+                document.getElementById("b8").value = "O";
+            }
+            t++
+            check();
+        }
+        function show8() {
+
+            if (t % 2 == 1) {
+                document.getElementById("b9").value = "X";
+            }
+            else {
+                document.getElementById("b9").value = "O";
+            }
+            t++
+            check();
+        }
+    
+        function restart() {
+
+            document.getElementById("b1").value = "";
+            document.getElementById("b2").value = "";
+            document.getElementById("b3").value = "";
+            document.getElementById("b4").value = "";
+            document.getElementById("b5").value = "";
+            document.getElementById("b6").value = "";
+            document.getElementById("b7").value = "";
+            document.getElementById("b8").value = "";
+            document.getElementById("b9").value = "";
+
+            t = 1;
+        }
+
+
+
+        function check() {
+            var a = document.getElementById("b1").value;
+            var b = document.getElementById("b2").value;
+            var c = document.getElementById("b3").value;
+            var d = document.getElementById("b4").value;
+            var e = document.getElementById("b5").value;
+            var f = document.getElementById("b6").value;
+            var g = document.getElementById("b7").value;
+            var h = document.getElementById("b8").value;
+            var i = document.getElementById("b9").value;
+
+
+
+            if (a.length != 0 && b.length != 0 && c.length != 0) {
+
+                if (a == b && a == c) {
+
+                    if (a == "X") {
+                        alert("PLAYER 1 WINNER")
+                    }
+                    else {
+                        alert("PLAYER 2 WINNER")
+                    }
+                }
+            }
+            if (a.length != 0 && d.length != 0 && g.length != 0) {
+                if (a == d && a == g) {
+                    if (a == "X") {
+                        alert("PLAYER 1 WINNER")
+                    }
+                    else {
+                        alert("PLAYER 2 WINNER")
+                    }
+                }
+            }
+
+            if (d.length != 0 && e.length != 0 && f.length != 0) {
+                if (d == e && d == f) {
+                    if (d == "X") {
+                        alert("PLAYER 1 WINNER")
+                    }
+                    else {
+                        alert("PLAYER 2 WINNER")
+                    }
+                }
+            }
+            if (b.length != 0 && e.length != 0 && h.length != 0) {
+                if (e == b && b == h) {
+                    if (b == "X") {
+                        alert("PLAYER 1 WINNER")
+                    }
+                    else {
+                        alert("PLAYER 2 WINNER")
+                    }
+                }
+            }
+            if (g.length != 0 && h.length != 0 && i.length != 0) {
+                if (g == h && g == i) {
+                    if (g == "X") {
+                        alert("PLAYER 1 WINNER")
+                    }
+                    else {
+                        alert("PLAYER 2 WINNER")
+                    }
+                }
+            }
+            if (c.length != 0 && f.length != 0 && i.length != 0) {
+                if (c == f && c == i) {
+                    if (c == "X") {
+                        alert("PLAYER 1 WINNER")
+                    }
+                    else {
+                        alert("PLAYER 2 WINNER")
+                    }
+                }
+            }
+            if (a.length != 0 && e.length != 0 && i.length != 0) {
+                if (a == e && a == i) {
+                    if (a == "X") {
+                        alert("PLAYER 1 WINNER")
+                    }
+                    else {
+                        alert("PLAYER 2 WINNER")
+                    }
+                }
+            }
+            if (c.length != 0 && e.length != 0 && g.length != 0) {
+                if (c == e && c == g) {
+
+
+
+                    if (c == "X") {
+                        alert("PLAYER 1 WINNER")
+                    }
+                    else {
+                        alert("PLAYER 2 WINNER")
+                    }
+                }
+            }
+            if (t == 10) {
+
+                alert("draw")
+
+
+            }
+
+
+
+        }
+
+
+
+
+
+    </script>
+</head>
+<style>
+    body {
+        text-align: center;
+        margin-top: 20vh;
+    }
+
+    .btn {
+
+        width: 90px;
+        height: 90px;
+        border: 2px solid black;
+        cursor: pointer;
+        font-size: xx-large;
+        font-weight: 700;
+    }
+</style>
+
+<body>
+    <div class="cont">
+        <input type="button" class="btn" id="b1" value="" onclick="show()">
+        <input type="button" class="btn" id="b2" value="" onclick="show1()">
+        <input type="button" class="btn" id="b3" value="" onclick="show2()">
+        <br>
+        <input type="button" class="btn" id="b4" value="" onclick="show3()">
+        <input type="button" class="btn" id="b5" value="" onclick="show4()">
+        <input type="button" class="btn" id="b6" value="" onclick="show5()">
+        <br>
+        <input type="button" class="btn" id="b7" value="" onclick="show6()">
+        <input type="button" class="btn" id="b8" value="" onclick="show7()">
+        <input type="button" class="btn" id="b9" value="" onclick="show8()">
+    </div>
+    <div>
+        <p>player 1:-</p>
+        <p id="winner1"></p>
+        <p>player 2:-</p>
+        <p id="winner2"></p>
+    </div>
+
+</body>
+
+</html>
